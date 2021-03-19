@@ -10856,6 +10856,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 676452856}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &676452858 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+    type: 3}
+  m_PrefabInstance: {fileID: 676452856}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &681762357
 GameObject:
   m_ObjectHideFlags: 0
@@ -24617,6 +24629,7 @@ GameObject:
   - component: {fileID: 1694579359}
   - component: {fileID: 1694579358}
   - component: {fileID: 1694579357}
+  - component: {fileID: 1694579360}
   m_Layer: 0
   m_Name: "\u73A9\u5BB6"
   m_TagString: Untagged
@@ -24708,6 +24721,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1694579360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694579356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea743d92a22f92742bdce519cb83dd31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lv: 1
+  speed: 10.5
+  isDead: 0
+  cName: "\u8C93\u54AA"
+  joystick: {fileID: 676452858}
 --- !u!1 &1695266484
 GameObject:
   m_ObjectHideFlags: 0
