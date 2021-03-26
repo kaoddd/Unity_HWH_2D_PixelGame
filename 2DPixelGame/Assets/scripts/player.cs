@@ -26,20 +26,28 @@ public class player : MonoBehaviour
     [Header("虛擬搖桿")]
     public FixedJoystick joystick;
     [Header("變形元件")]
-    public Transform tra; 
+    public Transform tra;
+
+    public Time time;
 
     //方法語法 Method - 處存複雜的城市區塊或演算法
     //修飾詞 類型 名稱 () {城市區塊或演算法 }
     // void 無類型
+
+
+
+    /// <summary>
+    /// 移動
+    /// </summary>
     private void Move()
     {
         print("移動");
 
         float h = joystick.Horizontal;
-        print("水平" + h);
-
         float v = joystick.Vertical;
-        print("垂直" + v);
+        
+
+        tra.Translate(h * speed * Time.deltaTime, v * speed * Time.deltaTime, 0);
     }
     private void Attack()
     {
@@ -58,15 +66,16 @@ public class player : MonoBehaviour
     //開始事件:播放後會執行一次
     private void Start()
     {
-        //輸出(任何類型資料)
-        print("恩~"); 
-    }
+     
+       Move();
+
+     }
 
 
     //更新事件:大約一秒執行60秒 60fps
     private void Update()
     {
-        print("哈囉~");
+        Move(); 
     }
 
 
