@@ -24,14 +24,22 @@ public class player : MonoBehaviour
     [Tooltip("這是角色的名稱")]
     public string cName = "貓咪";
     [Header("虛擬搖桿")]
-    public FixedJoystick joystick; 
+    public FixedJoystick joystick;
+    [Header("變形元件")]
+    public Transform tra; 
 
     //方法語法 Method - 處存複雜的城市區塊或演算法
     //修飾詞 類型 名稱 () {城市區塊或演算法 }
     // void 無類型
     private void Move()
     {
+        print("移動");
 
+        float h = joystick.Horizontal;
+        print("水平" + h);
+
+        float v = joystick.Vertical;
+        print("垂直" + v);
     }
     private void Attack()
     {

@@ -24738,6 +24738,7 @@ MonoBehaviour:
   isDead: 0
   cName: "\u8C93\u54AA"
   joystick: {fileID: 676452858}
+  tra: {fileID: 1694579359}
 --- !u!1 &1695266484
 GameObject:
   m_ObjectHideFlags: 0
